@@ -40,16 +40,17 @@ I will be creating the home page, using the original digital assets and content 
 
 ### Deployment
 
--
-
----
+- ***
 
 ## Screenshots
 
-### 2015 OCE web design
-
-![2015 OCE web design](https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2015-home-web.png)
-
-### 2018 OCE web design
-
-![2018 OCE web design](https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2018-web.png)
+<table border="0">
+ <tr>
+    <td style="font-size:16px">OCE 2015</td>
+    <td style="font-size:16px">OCE 2018</td>
+ </tr>
+ <tr>
+    <td><img src="https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2015-home-web.png" alt="OCE 2015 web design"/></td>
+    <td><img src="https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2018-web.png" alt="OCE 2018 web design"/></td>
+ </tr>
+</table>
