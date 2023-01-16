@@ -48,8 +48,8 @@ I will be creating the home page, using the original digital assets and content 
 
 ### 2015 OCE web design
 
-![2015 OCE web design](src\screenshots\OCE2015-home-web.png)
+![2015 OCE web design](https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2015-home-web.png)
 
 ### 2018 OCE web design
 
-![2018 OCE web design](src\screenshots\OCE2018-web.png)
+![2018 OCE web design](https://github.com/caitevanish/OCE-retrospective-2023/blob/main/src/screenshots/OCE2018-web.png)
