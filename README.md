@@ -27,11 +27,9 @@ I will be creating the home page, using the original digital assets and content 
 
 ### Frontend/Client
 
-- Angular
 - JavaScript
 - HTML
-- CSS
-- Bootstrap
+- CSS/Sass
 - Flexbox
 
 ### Backend/Server

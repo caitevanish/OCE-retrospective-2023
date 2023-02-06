@@ -1,38 +1,32 @@
 {
-  "name": "oce-website-v2015",
-  "version": "0.0.0",
+  "name": "oce-retrospective",
+  "version": "1.0.0",
+  "description": "OCE Retrospective Project",
+  "main": "index.js",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
-  "private": true,
-  "dependencies": {
-    "@angular/animations": "^14.2.0",
-    "@angular/common": "^14.2.0",
-    "@angular/compiler": "^14.2.0",
-    "@angular/core": "^14.2.0",
-    "@angular/forms": "^14.2.0",
-    "@angular/platform-browser": "^14.2.0",
-    "@angular/platform-browser-dynamic": "^14.2.0",
-    "@angular/router": "^14.2.0",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitevanish/OCE-website-v2015.git"
   },
+  "author": "Caitlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitevanish/OCE-website-v2015/issues"
+  },
+  "homepage": "https://github.com/caitevanish/OCE-website-v2015#readme",
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.2",
-    "@angular/cli": "~14.2.2",
-    "@angular/compiler-cli": "^14.2.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "autoprefixer": "^10.4.13",
+    "concat": "^1.0.3",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^10.1.0"
   }
 }
