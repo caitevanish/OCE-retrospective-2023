@@ -1,0 +1,24 @@
+.oce-1-nav {
+  background-color: $color-black;
+  font-size: 2rem;
+  height: 4rem;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    // text-decoration-style: none;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    color: $color-white;
+  }
+}
