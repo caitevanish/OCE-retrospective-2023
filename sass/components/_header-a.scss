@@ -1,0 +1,82 @@
+.header {
+  // height: 50vh;
+  &__nav {
+    background-color: $color-black;
+    font-size: 2rem;
+    height: 5rem;
+    // width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
+
+    &-list {
+      display: flex;
+      // justify-content: space-between;
+    }
+    &-item {
+      margin-right: 2rem;
+    }
+    &-link {
+      color: $color-white;
+      text-decoration: none;
+      // display: flex;
+
+      &:hover {
+        color: $color-primary-pink;
+      }
+    }
+  }
+
+  &__hero {
+    &-logo {
+      // width: 100%;
+      width: 30vw;
+      padding: 7rem 0;
+      margin: 0 auto;
+      &-box {
+        background-image: url(/assets/2015/header-background-1.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        display: flex;
+      }
+    }
+    &-trans {
+      position: relative;
+      background-color: $color-dark-2;
+      transform: translateY(-3px);
+      &-books {
+        height: 10vw;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__float {
+    position: relative;
+    &-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -40%);
+
+      border: 1.8rem solid $color-primary-pink;
+      background-color: $color-dark-1;
+      margin: 0 auto;
+      width: 40%;
+    }
+    &-question {
+      font-family: 'Merriweather';
+      color: $color-gray-light;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 3.7rem;
+      text-align: center;
+      padding: 2rem 5rem;
+    }
+  }
+}

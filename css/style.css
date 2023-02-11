@@ -13,6 +13,9 @@ body {
   box-sizing: border-box;
   background-color: #f7f7f7; }
 
+.u-temporary-border-box {
+  border: 3px solid hotpink; }
+
 .header__nav {
   background-color: #000;
   font-size: 2rem;
@@ -51,3 +54,23 @@ body {
     height: 10vw;
     display: flex;
     margin: 0 auto; }
+
+.header__float {
+  position: relative; }
+  .header__float-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    border: 1.8rem solid #f27181;
+    background-color: #00232f;
+    margin: 0 auto;
+    width: 40%; }
+  .header__float-question {
+    font-family: 'Merriweather';
+    color: #f7f7f7;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.7rem;
+    text-align: center;
+    padding: 2rem 5rem; }
