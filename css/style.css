@@ -11,10 +11,25 @@ html {
 body {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
-  background-color: #f7f7f7; }
+  background-color: #fff; }
 
-.u-temporary-border-box {
-  border: 3px solid hotpink; }
+.u-temporary-border-box-1 {
+  border: 3px solid red; }
+
+.u-temporary-border-box-2 {
+  border: 3px solid orange; }
+
+.u-temporary-border-box-3 {
+  border: 3px solid yellow; }
+
+.u-temporary-border-box-4 {
+  border: 3px solid green; }
+
+.u-temporary-border-box-5 {
+  border: 3px solid blue; }
+
+.u-temporary-border-box-6 {
+  border: 3px solid blueviolet; }
 
 .header__nav {
   background-color: #000;
@@ -61,7 +76,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     border: 1.8rem solid #f27181;
     background-color: #00232f;
     margin: 0 auto;
@@ -74,3 +89,35 @@ body {
     line-height: 3.7rem;
     text-align: center;
     padding: 2rem 5rem; }
+
+.intro-box {
+  position: relative;
+  height: 50%; }
+  .intro-box__image {
+    background-repeat: none;
+    height: auto;
+    display: block; }
+    .intro-box__image-box {
+      position: relative;
+      padding-top: 20%;
+      height: auto; }
+      .intro-box__image-box--body {
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .intro-box__image-box--caitlin {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        bottom: 0; }
+      .intro-box__image-box--heart {
+        position: absolute;
+        top: 5rem;
+        right: 5rem; }
+
+.section-intro {
+  height: 100rem;
+  background-color: #f7f7f7; }
+
+.section-services {
+  position: relative; }
