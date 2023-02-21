@@ -1,3 +1,35 @@
+.header {
+  &__nav {
+    font-size: 2rem;
+    height: 5rem;
+
+    &-link {
+      color: $color-white;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-primary-pink;
+      }
+    }
+  }
+
+  &__float {
+    &-question {
+      font-family: 'Merriweather';
+      color: $color-gray-light;
+      font-size: 2.5rem;
+      font-weight: 300;
+      line-height: 3.7rem;
+      letter-spacing: 2px;
+      text-align: center;
+
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+/// INTRO BOX
+
 .intro-box {
   &__text {
     &-heading,
@@ -5,7 +37,7 @@
       color: $color-gray-dark;
       text-align: center;
     }
-    
+
     &-heading {
       font-size: 5rem;
       font-family: 'Merriweather';

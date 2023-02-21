@@ -13,6 +13,24 @@ body {
   box-sizing: border-box;
   background-color: #fff; }
 
+.header__nav {
+  font-size: 2rem;
+  height: 5rem; }
+  .header__nav-link {
+    color: #fff;
+    text-decoration: none; }
+    .header__nav-link:hover {
+      color: #f27181; }
+
+.header__float-question {
+  font-family: 'Merriweather';
+  color: #f7f7f7;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 3.7rem;
+  letter-spacing: 2px;
+  text-align: center; }
+
 .intro-box__text-heading, .intro-box__text-paragraph {
   color: #777;
   text-align: center; }
@@ -51,8 +69,6 @@ body {
 
 .header__nav {
   background-color: #000;
-  font-size: 2rem;
-  height: 5rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -61,15 +77,10 @@ body {
     display: flex; }
   .header__nav-item {
     margin-right: 2rem; }
-  .header__nav-link {
-    color: #fff;
-    text-decoration: none; }
-    .header__nav-link:hover {
-      color: #f27181; }
 
 .header__hero-logo {
   width: 30vw;
-  padding: 7rem 0;
+  padding: 10rem 0;
   margin: 0 auto; }
   .header__hero-logo-box {
     background-image: url(/assets/2015/header-background-1.png);
@@ -98,15 +109,9 @@ body {
     border: 1.8rem solid #f27181;
     background-color: #00232f;
     margin: 0 auto;
-    width: 40%; }
+    width: 57.5rem; }
   .header__float-question {
-    font-family: 'Merriweather';
-    color: #f7f7f7;
-    font-size: 2.5rem;
-    font-weight: 300;
-    line-height: 3.7rem;
-    text-align: center;
-    padding: 2rem 5rem; }
+    padding: 3rem 10rem; }
 
 .intro-box {
   position: relative;

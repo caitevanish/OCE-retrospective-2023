@@ -2,10 +2,6 @@
   // height: 50vh;
   &__nav {
     background-color: $color-black;
-    font-size: 2rem;
-    height: 5rem;
-    // width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -13,19 +9,9 @@
 
     &-list {
       display: flex;
-      // justify-content: space-between;
     }
     &-item {
       margin-right: 2rem;
-    }
-    &-link {
-      color: $color-white;
-      text-decoration: none;
-      // display: flex;
-
-      &:hover {
-        color: $color-primary-pink;
-      }
     }
   }
 
@@ -33,7 +19,7 @@
     &-logo {
       // width: 100%;
       width: 30vw;
-      padding: 7rem 0;
+      padding: 10rem 0;
       margin: 0 auto;
       &-box {
         background-image: url(/assets/2015/header-background-1.png);
@@ -64,16 +50,10 @@
       border: 1.8rem solid $color-primary-pink;
       background-color: $color-dark-1;
       margin: 0 auto;
-      width: 40%;
+      width: 57.5rem;
     }
     &-question {
-      font-family: 'Merriweather';
-      color: $color-gray-light;
-      font-size: 2.5rem;
-      font-weight: 300;
-      line-height: 3.7rem;
-      text-align: center;
-      padding: 2rem 5rem;
+      padding: 3rem 10rem;
     }
   }
 }
