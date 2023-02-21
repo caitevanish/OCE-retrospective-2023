@@ -13,6 +13,24 @@ body {
   box-sizing: border-box;
   background-color: #fff; }
 
+.intro-box__text-heading, .intro-box__text-paragraph {
+  color: #777;
+  text-align: center; }
+
+.intro-box__text-heading {
+  font-size: 5rem;
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 0.5rem; }
+
+.intro-box__text-paragraph {
+  font-size: 3rem;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 2px; }
+
 .u-temporary-border-box-1 {
   border: 3px solid red; }
 
@@ -92,31 +110,49 @@ body {
 
 .intro-box {
   position: relative;
-  height: 50%; }
+  height: 50%;
+  margin-top: -10rem; }
   .intro-box__image {
     background-repeat: none;
-    height: auto;
-    display: block; }
+    height: auto; }
     .intro-box__image-box {
       position: relative;
-      padding-top: 20%;
-      height: auto; }
+      overflow: hidden;
+      padding-top: 10rem; }
       .intro-box__image-box--body {
-        position: absolute;
-        top: 0;
-        left: 0; }
+        position: relative;
+        left: 0;
+        bottom: -10rem;
+        z-index: 1; }
       .intro-box__image-box--caitlin {
         position: absolute;
-        top: 50%;
         left: 25%;
-        bottom: 0; }
+        bottom: 0;
+        z-index: 2; }
       .intro-box__image-box--heart {
         position: absolute;
-        top: 5rem;
-        right: 5rem; }
+        top: 50%;
+        right: 4rem;
+        transform: translate(-50%, -50%); }
+  .intro-box__text {
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 80rem;
+    padding: 0 10rem;
+    align-items: center; }
+    .intro-box__text-heading {
+      padding: 1rem 0 4rem;
+      margin-bottom: 5rem; }
+    .intro-box__text-paragraph {
+      width: 60rem;
+      position: relative;
+      margin-top: 5rem; }
 
 .section-intro {
-  height: 100rem;
+  height: auto;
   background-color: #f7f7f7; }
 
 .section-services {

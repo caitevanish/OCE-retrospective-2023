@@ -1,26 +1,24 @@
 .intro-box {
   position: relative;
   height: 50%;
+  margin-top: -10rem;
   &__image {
     background-repeat: none;
-
     height: auto;
-    display: block;
 
     &-box {
       position: relative;
+      overflow: hidden;
       padding-top: 10rem;
-      height: auto;
 
       &--body {
         position: relative;
         left: 0;
-        bottom: 0;
+        bottom: -10rem;
         z-index: 1;
       }
       &--caitlin {
         position: absolute;
-        top: 50%;
         left: 25%;
         bottom: 0;
         z-index: 2;
@@ -28,8 +26,31 @@
       &--heart {
         position: absolute;
         top: 50%;
-        right: 5rem;
+        right: 4rem;
+        transform: translate(-50%, -50%);
       }
+    }
+  }
+
+  &__text {
+    position: absolute;
+    display: block;
+
+    top: 50%;
+    right: 10%; // height: auto;
+    transform: translateY(-50%);
+    width: 80rem;
+    padding: 0 10rem;
+    align-items: center;
+
+    &-heading {
+      padding: 1rem 0 4rem;
+      margin-bottom: 5rem;
+    }
+    &-paragraph {
+      width: 60rem;
+      position: relative;
+      margin-top: 5rem;
     }
   }
 }
