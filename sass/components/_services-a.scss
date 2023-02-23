@@ -1,0 +1,43 @@
+.services__box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &-left,
+  &-right {
+    position: relative;
+    padding: 8rem 8rem;
+    width: 50%;
+  }
+  &-left {
+    padding-bottom: 12rem; //padding top for right box?
+    background-color: $color-dark-2;
+    &--outer {
+      @include outer-box;
+      &-img {
+        transform: translate(-2.12rem, 4.5rem);
+      }
+    }
+    &--inner {
+      @include inner-box;
+      &-img {
+      }
+    }
+  }
+
+  &-right {
+    background-color: $color-primary-blue-1;
+    &--outer {
+      @include outer-box;
+      &-img {
+        transform: translate(2.25rem, -6.1rem);
+      }
+    }
+    &--inner {
+      @include inner-box;
+      border: 2.5rem solid $color-dark-1;
+      &-img {
+      }
+    }
+  }
+}
