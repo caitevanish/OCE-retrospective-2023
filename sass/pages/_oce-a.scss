@@ -4,5 +4,8 @@
 }
 
 .section-services {
-  position: relative;
+  // position: relative;
+  height: auto;
+  width: 100vw;
+  background-color: $color-primary-blue-1;
 }
