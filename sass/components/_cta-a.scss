@@ -1,0 +1,31 @@
+.cta {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: 4;
+  grid-template-columns: 8;
+
+  &__box {
+    position: relative;
+    height: 100%;
+    background-image: url(/assets/2015/background-flowers.jpg);
+    background-size: cover;
+  }
+  &__text {
+    font-family: $font-display;
+    color: $color-primary-blue-2;
+    font-size: 4rem;
+    font-style: italic;
+
+    // margin: 0 auto;
+
+    &__-img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+  &__btn {
+  }
+}

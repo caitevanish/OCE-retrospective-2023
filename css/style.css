@@ -23,7 +23,7 @@ body {
       color: #f27181; }
 
 .header__float-question {
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   color: #f7f7f7;
   font-size: 2.5rem;
   font-weight: 300;
@@ -37,14 +37,14 @@ body {
 
 .intro-box__text-heading {
   font-size: 5rem;
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   font-weight: 900;
   letter-spacing: 0.5rem; }
 
 .intro-box__text-paragraph {
   font-size: 3rem;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
   letter-spacing: 2px; }
@@ -183,6 +183,13 @@ body {
       background-color: #fff; }
   .services__box-right {
     background-color: #1d6e79; }
+    .services__box-right--outer {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .services__box-right--outer-img {
+        transform: translate(2.25rem, -6.1rem); }
     .services__box-right--inner {
       width: 46rem;
       height: 25rem;
@@ -191,13 +198,28 @@ body {
       padding: 5rem 5rem;
       background-color: #fff;
       border: 2.5rem solid #00232f; }
-    .services__box-right--outer {
+
+.cta {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: 4;
+  grid-template-columns: 8; }
+  .cta__box {
+    position: relative;
+    height: 100%;
+    background-image: url(/assets/2015/background-flowers.jpg);
+    background-size: cover; }
+  .cta__text {
+    font-family: "Merriweather";
+    color: #004e66;
+    font-size: 4rem;
+    font-style: italic; }
+    .cta__text__-img {
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      .services__box-right--outer-img {
-        transform: translate(2.25rem, -6.1rem); }
+      left: 0;
+      transform: translateY(-50%); }
 
 .section-intro {
   height: auto;
@@ -207,3 +229,6 @@ body {
   height: auto;
   width: 100vw;
   background-color: #1d6e79; }
+
+.section-cta {
+  height: 50rem; }
