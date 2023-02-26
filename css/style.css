@@ -103,6 +103,7 @@ body {
   position: relative; }
   .header__float-box {
     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -200,26 +201,51 @@ body {
       border: 2.5rem solid #00232f; }
 
 .cta {
-  display: grid;
-  align-content: center;
-  justify-content: center;
-  grid-template-rows: 4;
-  grid-template-columns: 8; }
+  position: relative; }
   .cta__box {
     position: relative;
     height: 100%;
-    background-image: url(/assets/2015/background-flowers.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(/assets/2015/background-flowers.jpg);
     background-size: cover; }
   .cta__text {
     font-family: "Merriweather";
     color: #004e66;
     font-size: 4rem;
-    font-style: italic; }
-    .cta__text__-img {
-      position: absolute;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(157, 196, 139, 0.7);
+    width: 100vw;
+    padding: 4rem 0; }
+    .cta__text-img {
+      position: relative;
       top: 50%;
       left: 0;
       transform: translateY(-50%); }
+  .cta__btn {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    transform: translateY(-20%);
+    width: 30rem;
+    background-color: #00232f;
+    color: #fff;
+    padding: 2rem 4rem;
+    font-family: "Merriweather";
+    font-size: 2rem;
+    border: solid 1rem #f27181; }
+
+.footer {
+  height: 10rem;
+  background-color: #000; }
+
+.legal {
+  position: relative;
+  color: #f7f7f7;
+  text-align: center; }
 
 .section-intro {
   height: auto;
