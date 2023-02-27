@@ -1,3 +1,27 @@
+/*
+max-width MQs:
+
+0-600px:        Phone
+600-900px:      Tablet Portrait
+900- 1200px:    Tablet Landscape
+**1200-1800px:    where our normal styles apply    
+
+min-width MQs:
+
+1800px+ :       Big desktop    
+1920 x 1200 = Caitlin Laptop
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout >components
+
+1em=16px
+*/
 *,
 *::after,
 *::before {
@@ -7,15 +31,30 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
-  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   background-color: #fff; }
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400; }
+
 .header__nav {
-  font-size: 2rem;
-  height: 5rem; }
+  font-size: 1.6rem;
+  height: 4rem; }
+  @media (min-width: 112.5em) {
+    .header__nav {
+      font-size: 2rem; } }
   .header__nav-link {
     color: #fff;
     text-decoration: none; }

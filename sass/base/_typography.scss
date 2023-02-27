@@ -2,10 +2,19 @@
 $font-display: 'Merriweather';
 $font-body: 'Raleway';
 
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
 .header {
   &__nav {
-    font-size: 2rem;
-    height: 5rem;
+    font-size: $default-font-size;
+    height: 4rem;
+
+    @include respond(big-desktop) {
+      font-size: $large-font-size;
+    }
 
     &-link {
       color: $color-white;

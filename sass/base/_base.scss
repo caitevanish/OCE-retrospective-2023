@@ -7,12 +7,26 @@
 }
 
 html {
-  // box-sizing: border-box;
   font-size: 62.5%;
+
+  @include respond(tab-land) {
+    //width < 900?
+    // font-size: 60%;  //1rem = 9px,   9/16 = 56.25%
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    //width < 600?
+    // font-size: 70%;  //1rem = 8px,   8/16 = 50%
+    font-size: 50%;
+  }
+  @include respond(big-desktop) {
+    // font-size: 80%;  // 1rem=12px,   12/16 = 75%
+    //includes largest-desktop bp
+    font-size: 75%;
+  }
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   background-color: $color-white;
 }
