@@ -1,10 +1,11 @@
 .footer {
+  position: relative;
   height: 10rem;
   background-color: $color-black;
 }
 
 .legal {
-  position: relative;
+  position: absolute;
   color: $color-gray-light;
-  text-align: center;
+  @include center-position;
 }

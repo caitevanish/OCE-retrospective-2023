@@ -1,15 +1,11 @@
-// FONT STYES
-$font-display: 'Merriweather';
-$font-body: 'Raleway';
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-body;
   font-weight: 400;
+  font-size: $default-font-size;
 }
 
 .header {
   &__nav {
-    font-size: $default-font-size;
     height: 4rem;
 
     @include respond(big-desktop) {
@@ -30,11 +26,15 @@ body {
     &-question {
       font-family: $font-display;
       color: $color-gray-light;
-      font-size: 2.5rem;
       font-weight: 300;
+      // font-size: 2.5rem;
       line-height: 3.7rem;
       letter-spacing: 2px;
       text-align: center;
+
+      @include respond(largest-desktop) {
+        font-size: 2.5rem;
+      }
     }
   }
 }
@@ -59,7 +59,6 @@ body {
     }
     &-paragraph {
       font-size: 3rem;
-      font-family: $font-body;
       font-style: normal;
       font-weight: 500;
       letter-spacing: 2px;

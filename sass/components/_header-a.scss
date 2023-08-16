@@ -9,6 +9,7 @@
 
     &-list {
       display: flex;
+      align-items: center;
     }
     &-item {
       margin-right: 2rem;
@@ -45,7 +46,6 @@
   &__float {
     position: relative;
     &-box {
-      position: absolute;
       @include center-position;
       border: 1.8rem solid $color-primary-pink;
       background-color: $color-dark-1;
